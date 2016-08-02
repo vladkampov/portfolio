@@ -1,5 +1,5 @@
 import angular from 'angular';
-import s from '!style!css!sass!./index.scss'
+import s from './index.less';
 
 const ngModule = angular.module('app', []);
 
