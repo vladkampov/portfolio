@@ -1,3 +1,12 @@
 {
-  "presets": ["es2015"]
-}
+    "presets": [
+      "es2015",
+      "es2016",
+      "react"
+    ],
+    "plugins": [
+      "transform-decorators-legacy",
+      "transform-class-properties",
+      "transform-react-jsx"
+    ]
+  }
