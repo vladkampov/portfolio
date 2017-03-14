@@ -1,3 +1,25 @@
+@import "../../variables";
+
 .Home {
 	text-align: center;
+	background-image: $bg-image;
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	height: 100vh;
+
+	&__linkbar {
+		text-align: center;
+
+		.btn {
+			font-size: inherit;
+			background: rgba(0, 0, 0, 0.3);
+			width: 100%;
+			color: #ffffff;
+			border-radius: 5px;
+
+			&:hover {
+				background: rgba(255, 255, 255,0.3);
+			}
+		}
+	}
 }
