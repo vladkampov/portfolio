@@ -1,0 +1,9 @@
+@import "../variables";
+
+.App {
+	background: $background;
+	color: $font;
+
+	height: 100vh;
+	overflow: hidden;
+}
