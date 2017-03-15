@@ -1,0 +1,31 @@
+@import "../../variables";
+	
+.Header {
+	background-image: $bg-image;
+	background-size: 100%;
+  background-position-y: 45%;
+	background-attachment: fixed;
+	
+	h1, h2 {
+		margin: 5px auto 0;
+	}
+
+	&__linkbar {
+		text-align: center;
+		h2 {
+			margin: 0 auto 10px;
+		}
+
+		.btn {
+			font-size: 0.5em;
+			background: rgba(0, 0, 0, 0.3);
+			width: 100%;
+			color: #ffffff;
+			border-radius: 5px;
+
+			&:hover {
+				background: rgba(255, 255, 255,0.3);
+			}
+		}
+	}
+}
