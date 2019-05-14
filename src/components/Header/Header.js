@@ -13,9 +13,10 @@ function Home({ path }) {
 				</h2>
 				<div className="Header__linkbar">
 					<Row>
-						<Col md={6}><h2><Link to="/music" className={`btn ${path === '/music' && 'active'}`}>Musician</Link></h2></Col>
-						<Col md={6}><h2><Link to="/dev" className={`btn ${path === '/dev' && 'active'}`}>Developer</Link></h2></Col>
-						{/* <Col md={6}><h2><Link to="/design" className="btn">Designer</Link></h2></Col> */}
+						<Col md={3}><h2><Link to="/dev" className={`btn ${path === '/dev' && 'active'}`}>Developer</Link></h2></Col>
+						<Col md={3}><h2><Link to="/music" className={`btn ${path === '/music' && 'active'}`}>Musician</Link></h2></Col>
+						<Col md={3} />
+					 	<Col md={3}><h2><Link to="/url-shortener" className="btn btn-success">URL Shortener Service</Link></h2></Col>
 					</Row>
 				</div>
 			</div>

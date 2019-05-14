@@ -3,17 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.0.0",
-    "bootstrap-sass": "^3.3.7",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "bootstrap-sass": "^3.4.1",
     "eslint": "^4.19.1",
     "font-awesome": "^4.7.0",
-    "react": "^16.2.0",
-    "react-bootstrap": "^0.32.1",
-    "react-dom": "^16.2.0",
+    "lodash.pick": "^4.4.0",
+    "mobx": "^5.9.4",
+    "mobx-react": "^5.4.3",
+    "react": "^16.8.6",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.8.6",
     "react-fontawesome": "^1.6.1",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
-    "react-scripts-sass": "1.1.3"
+    "react-scripts-sass": "1.1.3",
+    "reactive-mobx-form": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +27,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "node-sass": "^4.7.2",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "node-sass": "^4.12.0",
     "webpack": "^4.3.0"
   }
 }
