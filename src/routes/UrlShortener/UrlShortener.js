@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 import { Col, Row, Alert } from "react-bootstrap";
+import uuidv4 from 'uuid/v4';
 import Spinner from '../../components/Spinner';
 import FormUrlShortener from './FormUrlShortener';
 
+
 class UrlShortener extends Component {
+    state = { userId: '' };
+
     onSubmit = body => {
         const { shortIt } = this.props.urlStore;
+        const { userId } = this.state;
 
-        shortIt(body);
+        shortIt({ ...body, userId });
     };
+
+    componentDidMount() {
+        let userId = localStorage.getItem('userId');
+
+        if (!userId) {
+            userId = uuidv4();
+            localStorage.setItem('userId', userId);
+        }
+
+        this.setState({ userId })
+    }
 
     render() {
         const { shortenUrl, loadingError, isLoading } = this.props.urlStore;
